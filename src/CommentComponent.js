@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react";
-import faker from "@faker-js/faker";
+// import ReactDOM from "react";
+// import faker from "@faker-js/faker";
 
 const CommentComponent = (props) => {
   // props bu yerda obyekt kiradi
