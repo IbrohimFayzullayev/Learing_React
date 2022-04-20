@@ -2,39 +2,52 @@ import React from "react";
 import ReactDOM from "react-dom";
 import faker from "@faker-js/faker";
 import CommentComponent from "./CommentComponent.js";
+import CartComponent from "./CartComponent.js";
 const App = function () {
   return (
-    <div>
-      <CommentComponent
-        name={faker.name.firstName()}
-        img={faker.image.avatar()}
-        comment={faker.hacker.phrase()}
-        day={2}
-      />
-      <CommentComponent
-        name={faker.name.firstName()}
-        img={faker.image.avatar()}
-        comment={faker.hacker.phrase()}
-        day={3}
-      />
-      <CommentComponent
-        name={faker.name.firstName()}
-        img={faker.image.avatar()}
-        comment={faker.hacker.phrase()}
-        day={4}
-      />
-      <CommentComponent
-        name={faker.name.firstName()}
-        img={faker.image.avatar()}
-        comment={faker.hacker.phrase()}
-        day={5}
-      />
-      <CommentComponent
-        name={faker.name.firstName()}
-        img={faker.image.avatar()}
-        comment={faker.hacker.phrase()}
-        day={6}
-      />
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <CartComponent>
+        <CommentComponent
+          name={faker.name.firstName()}
+          img={faker.image.avatar()}
+          comment={faker.hacker.phrase()}
+          day={2}
+        />
+      </CartComponent>
+      <CartComponent>
+        <CommentComponent
+          name={faker.name.firstName()}
+          img={faker.image.avatar()}
+          comment={faker.hacker.phrase()}
+          day={2}
+        />
+      </CartComponent>
+      <CartComponent>
+        <CommentComponent
+          name={faker.name.firstName()}
+          img={faker.image.avatar()}
+          comment={faker.hacker.phrase()}
+          day={2}
+        />
+      </CartComponent>
+      <CartComponent>
+        <CommentComponent
+          name={faker.name.firstName()}
+          img={faker.image.avatar()}
+          comment={faker.hacker.phrase()}
+          day={2}
+        />
+      </CartComponent>
+      <CartComponent>
+        <CommentComponent
+          name={faker.name.firstName()}
+          img={faker.image.avatar()}
+          comment={faker.hacker.phrase()}
+          day={2}
+        />
+      </CartComponent>
     </div>
   );
 };
